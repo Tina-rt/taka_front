@@ -90,37 +90,100 @@ input:focus{
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: start;
     box-shadow: black 0 0 15px 1px;
 
     height: 80%;
     width: 40% ;
     
 }
-
+.highlight-element{
+    margin: 10px;
+}
 .highlight .title{
     font-size: 2em;
 }
+
 .product-name{
     font-family: Nunito;
     font-size: 2em;
 }
 
+.highlight .product-price{
+    font-size: 3em;
+}
+
 .btn{
-    background-color: #8D0000;
+    
     padding: 10px;
     width: fit-content;
     border-radius: 10px;
     box-shadow: black 0 0 9px -4px;
-
 }
-.img-product{
+.btn:hover{
+    cursor: pointer;
+}
+.btn-shop-now{
+    background-color: #8D0000;
+    margin: 30px 10px;
+}
+.highlight .img-product{
     position: absolute;
     right: 0px;
     transform: translate(-20%,30%);
     rotate: -30deg;
 }
-.img-product img{
+.highlight .img-product img{
     width: 548px;
 
+}
+
+.content{
+    margin-top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+
+.article-title h1{
+    font-weight: 100;
+}
+
+.article-content{
+    width: 50%;
+}
+
+.product-list{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.product-item{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    box-shadow: black 0 0 10px -4px;
+    border-radius: 10px;
+    padding: 20px 20px 50px 20px;
+    position: relative;
+}
+
+.product-item .product-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-purchase{
+    background-color: #FFCE4B;
+}
+.product-item .img-product img{
+    width: 200px;
+}
+.product-item .img-product{
+    position: absolute;
+    transform: translateY(50%);
 }
