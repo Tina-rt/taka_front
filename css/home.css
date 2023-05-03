@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("../fonts/Raleway-Bold.ttf");
+}
+@font-face {
+    font-family: Nunito;
+    src: url("../fonts/Nunito-Black.ttf");
+}
+body, html{
+    padding: 0;
+    margin: 0;
+}
+.screen{
+    height: 100vh;
+}
+.banniere{
+    background-color: #790000;
+    height: 50%;
+    width: 100%;
+    color: white;
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    height: fit-content;
+    padding: 10px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+.nav-item{
+    
+}
+.nav-aside{
+    display: flex;
+
+    align-items: center;
+}
+
+.search-section{
+    background-color: #660000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#search{
+    background-color: transparent;
+    border: 0;
+    height: 30px;
+    color: white;
+}
+
+input:focus{
+    outline: none;
+}
+
+.slogan{
+    width: 40%;
+    font-size: 4em;
+    font-family: Raleway;
+    padding: 5% 5%;
+}
+
+.highlight{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    background-color: #790000;
+    transform: translateY(30%);
+    padding: 20px 40px ;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: black 0 0 15px 1px;
+
+    height: 80%;
+    width: 40% ;
+    
+}
+
+.highlight .title{
+    font-size: 2em;
+}
+.product-name{
+    font-family: Nunito;
+    font-size: 2em;
+}
+
+.btn{
+    background-color: #8D0000;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: black 0 0 9px -4px;
+
+}
+.img-product{
+    position: absolute;
+    right: 0px;
+    transform: translate(-20%,30%);
+    rotate: -30deg;
+}
+.img-product img{
+    width: 548px;
+
+}
